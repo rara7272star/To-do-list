@@ -1,0 +1,96 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: url('https://i.pinimg.com/736x/b1/cc/6b/b1cc6b97c1081f7cb9a932fc71109d6c.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #000; /* جعل الكتابة باللون الأسود */
+}
+
+.container {
+    width: 350px;
+    margin: 20px auto;
+    padding: 25px;
+    box-shadow: none;  /* إزالة الظل */
+    border-radius: 0;  /* إزالة الزوايا المدورة */
+}
+
+h1 {
+    text-align: center;
+    color: #FF6347;  /* تغيير لون العنوان إلى لون ملون (Tomato مثلاً) */
+    margin-bottom: 20px;
+    font-size: 48px;  /* زيادة حجم العنوان */
+    font-weight: bold;  /* جعل الخط عريض */
+    background: linear-gradient(to right, #FF6347, #FFD700, #32CD32); /* تدرج لوني بين الأحمر والذهبي والأخضر */
+    -webkit-background-clip: text;
+    color: transparent;  /* لجعل التدرج اللوني يظهر على النص */
+}
+
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+}
+
+button[type="submit"] {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #ffd700; /* ذهبى */
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #e6c200; /* لون أغمق عند التمرير */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent; /* إزالة الخلفية */
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 0;  /* إزالة الزوايا المدورة */
+    align-items: center;
+    box-shadow: none; /* إزالة الظل */
+}
+
+button {
+    background-color: #ffd700; /* ذهبى */
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e6c200; /* لون أغمق عند التمرير */
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #6c757d;
+    background-color: transparent;  /* إزالة الخلفية */
+    border: none;  /* إزالة الحدود */
+  }
